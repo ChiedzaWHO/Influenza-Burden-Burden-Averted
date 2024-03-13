@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #ffff;
+
+}
+
+
+
+/*
+  ========================================
+  Banner
+  ========================================
+*/
+
+.bannerlogos{
+    margin-right:20px;
+    margin-left:40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block;
+	vertical-align: top;
+    background-color: white;
+}
+
+.logos{
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    top: 0;
+    background-color: white;
+    display: inline-block;
+}
+
+.titlelogowrapper{
+    background-color: white;
+    height: 72px;
+    margin-bottom: 0px;
+}
+
+
+.bannertitle,
+.logos{
+	display: inline-block;
+    vertical-align: center;
+}
+
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenav main";
+    height: 100vh;
+  }
+
+.main {
+    grid-area: main;
+    background-color: #ffff;
+    padding-left: 40px;
+    padding-right: 32px;
+    max-width: calc(100vw - 400px);
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+  }
+
+/*
+  ========================================
+  Side navigation
+  ========================================
+*/
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #fff;
+    padding: 0px;
+    /*width: 300px;*/
+    /*display: inline-block;*/
+  }
+
+/*
+  ========================================
+  Non-card text main
+  ========================================
+*/
+
+.titletext {
+    size: 16;
+    font-weight: bold;
+}
+
